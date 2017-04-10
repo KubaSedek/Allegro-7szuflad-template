@@ -1,45 +1,97 @@
 * {
     margin: 0 auto;
     padding: 0;
-    border: 1px solid black;
+    /*border: 1px solid black;*/
+    font-family: Roboto;
 }
 
 #szuflada_header {
     width: 100%;
-    background-color: beige;
+    height: 450px;
+    background-image: url("http://68.media.tumblr.com/77fe715574b1d6d151b440631fd6ef10/tumblr_okc13mrd6F1ta0hnbo1_1280.jpg");
+    background-position: center bottom;
+    background-size: cover;
 }
 
 .szuflada_container {
     width: 1024px;
+    height: 100%;
 }
 .szuflada_header_content {
-    height: 370px;
-    width: 1024px;
-    /*background-color: black;*/
-    background-image: url("https://scontent.fwaw3-1.fna.fbcdn.net/v/t1.0-9/17265290_1248757628512202_2901238894077504859_n.png?oh=fc336cf3f17e1b1110cc40a7dcbbeab0&oe=59520B61");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.szuflada_header_content > h1 {
+    font-size: 80px;
+    font-family: Roboto;
+    font-weight: 100;
+    color: lightgrey;
 }
 
 /*------------------SECTION---------------*/
 
 #szuflada_section {
     width: 100%;
-    background-color: blue;
+    height: 450px;
+    background-color: beige;
 }
 .szuflada_section_content {
-    background-color: yellow;
-    height: 400px;
     display: flex;
 }
 
 .szuflada_obraz {
     height: 100%;
     width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.szuflada_obraz > img {
+    height: 60%;
+    width: 90%;
 }
 
 .szuflada_opis {
     height: 100%;
     width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.szuflada_opis > h1 {
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 30px;
+    color: grey;
+}
+
+/*--------------footer----------------*/
+
+#szuflada_footer {
+    width: 100%;
+    height: 400px;
+    background-color: black;
+}
+.szuflada_footer_content {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.szuflada_footer_content > iframe {
+    height: 270px;
+    width: 370px;
+}
+
+.szuflada_kontakt {
+    height: 270px;
+    width: 370px;
+}
+.szuflada_kontakt> p {
+    color: grey;
 }
