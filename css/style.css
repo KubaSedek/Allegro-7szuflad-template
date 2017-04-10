@@ -1,0 +1,45 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    border: 1px solid black;
+}
+
+#szuflada_header {
+    width: 100%;
+    background-color: beige;
+}
+
+.szuflada_container {
+    width: 1024px;
+}
+.szuflada_header_content {
+    height: 370px;
+    width: 1024px;
+    /*background-color: black;*/
+    background-image: url("https://scontent.fwaw3-1.fna.fbcdn.net/v/t1.0-9/17265290_1248757628512202_2901238894077504859_n.png?oh=fc336cf3f17e1b1110cc40a7dcbbeab0&oe=59520B61");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*------------------SECTION---------------*/
+
+#szuflada_section {
+    width: 100%;
+    background-color: blue;
+}
+.szuflada_section_content {
+    background-color: yellow;
+    height: 400px;
+    display: flex;
+}
+
+.szuflada_obraz {
+    height: 100%;
+    width: 50%;
+}
+
+.szuflada_opis {
+    height: 100%;
+    width: 50%;
+}
