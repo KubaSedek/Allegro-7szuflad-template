@@ -1,0 +1,1 @@
+# Allegro-7szuflad-template
