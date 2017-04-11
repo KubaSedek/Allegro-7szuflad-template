@@ -7,27 +7,50 @@
 
 #szuflada_header {
     width: 100%;
-    height: 450px;
-    background-image: url("http://68.media.tumblr.com/77fe715574b1d6d151b440631fd6ef10/tumblr_okc13mrd6F1ta0hnbo1_1280.jpg");
-    background-position: center bottom;
+    height: 500px;
+    background-image: url("https://images.pexels.com/photos/30373/pexels-photo-30373.jpg?w=940&h=650&auto=compress&cs=tinysrgb");
+    background-position: bottom;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 .szuflada_container {
     width: 1024px;
     height: 100%;
 }
-.szuflada_header_content {
-    display: flex;
+
+.szuflada_7szuflad_header {
+    width: 500px;
+    height: 350px;
+    /*border: 1px solid black;*/
+    margin-top: 40px;
+    display:flex;
     justify-content: center;
     align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
 }
-
-.szuflada_header_content > h1 {
+.szuflada_7szuflad_header > h1 {
     font-size: 80px;
     font-family: Roboto;
     font-weight: 100;
     color: lightgrey;
+    /*text-align: center;*/
+}
+
+.szuflada_contact {
+    width: 100%;
+    clear: both;
+    text-align: right;
+}
+
+.szuflada_contact > ul li {
+    color: lightgrey;
+    list-style-type: none;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 400;
+    margin-right: 8px;
+    margin-top: 15px;
 }
 
 /*------------------SECTION---------------*/
