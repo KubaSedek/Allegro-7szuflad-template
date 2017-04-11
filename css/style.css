@@ -21,7 +21,7 @@
 
 .szuflada_7szuflad_header {
     width: 500px;
-    height: 350px;
+    height: 300px;
     /*border: 1px solid black;*/
     margin-top: 40px;
     display:flex;
@@ -44,13 +44,17 @@
 }
 
 .szuflada_contact > ul li {
-    color: lightgrey;
     list-style-type: none;
     display: inline-block;
     font-size: 20px;
     font-weight: 400;
     margin-right: 8px;
     margin-top: 15px;
+}
+
+.szuflada_contact > ul li a {
+    text-decoration: none;
+    color: black;
 }
 
 /*------------------SECTION---------------*/
