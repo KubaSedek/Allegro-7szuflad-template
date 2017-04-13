@@ -8,9 +8,13 @@
 #szuflada_header {
     width: 100%;
     height: 500px;
-    background-image: url("https://images.pexels.com/photos/93017/pexels-photo-93017.jpeg?w=940&h=650&auto=compress&cs=tinysrgb");
-    background-position: bottom;
-    background-size: cover;
+    background-image: url("https://scontent.fwaw3-1.fna.fbcdn.net/v/t1.0-9/17362917_1259001034154528_851650735925339835_n.jpg?oh=a77969675e71804900f4337c9323796f&oe=594CBC79");
+    /*background-image: url("https://static.pexels.com/photos/93017/pexels-photo-93017.jpeg");*/
+    background-color: beige;
+    background-position: center;
+    background-size: contain;
+    /*background-size: contain;*/
+    background-repeat: no-repeat;
     /*background-attachment: fixed;*/
 }
 
@@ -24,7 +28,7 @@
     align-items: center;
 }
 
-.szuflada_7szuflad_header {
+/*.szuflada_7szuflad_header {
     width: 400px;
     height: 200px;
     display:flex;
@@ -32,7 +36,7 @@
     align-items: center;
     background-color: rgba(0, 0, 0, 0.4);
     /*transform: rotate(30deg);*/
-}
+/*}*/
 
 .szuflada_7szuflad_header > h1 {
     font-size: 80px;
@@ -79,7 +83,7 @@
     font-size: 20px;
     font-weight: 300;
     line-height: 30px;
-    color: darkgrey;
+    color: #423D3C;
 }
 
 .szuflada_opis > p:first-child {
