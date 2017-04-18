@@ -129,26 +129,44 @@
     align-items: center;
 }
 
-.szuflada_footer_content > iframe {
+/*.szuflada_footer_content > iframe {
     height: 270px;
     width: 300px;
-}
+}*/
 
 .szuflada_contact {
     margin-left: 100px;
 }
 
-.szuflada_contact > ul li {
+.szuflada_contact > table tr td {
     list-style-type: none;
-    display: block;
-    font-size: 17px;
+    display: inline-block;
+    font-size: 25px;
     font-weight: 600;
     letter-spacing: 2px;
     margin-right: 8px;
     margin-top: 15px;
 }
 
-.szuflada_contact > ul li a {
+.szuflada_contact > table tr td a {
     text-decoration: none;
     color: lightgrey;
+}
+
+.szuflada_contact > table tr td img {
+    width: 40px;
+    height: 40px;
+}
+
+.opis_firmy {
+    color: lightgrey;
+    width: 50%;
+}
+
+.opis_firmy > p {
+    line-height: 20px;
+}
+
+.opis_firmy > p span {
+    font-size: 25px;
 }
