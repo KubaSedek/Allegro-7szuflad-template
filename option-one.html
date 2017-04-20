@@ -2,10 +2,6 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>SZABLON ALLEGRO 7SZUFLAD</title>
-        <link rel="stylesheet" href="./css/style.css">
-        <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Spirax" rel="stylesheet">
         <style media="screen">
             * {
                 margin: 0 auto;
@@ -43,6 +39,7 @@
                 display:flex;
                 justify-content: center;
                 align-items: center;
+                border-radius: 3px;
                 background-color: rgba(0, 0, 0, 0.4);
                 /*transform: rotate(30deg);*/
             }
@@ -55,7 +52,29 @@
                 text-align: center;
             }
 
+            .links {
+                position: absolute;
+                right: 20px;
+                top: 20px;
+            }
 
+            .links > ul li {
+                list-style-type: none;
+                background-color: rgba(0, 0, 0, 0.6);
+                padding: 4px;
+                margin-right: 10px;
+                text-align: center;
+                border-radius: 3px;
+                display: inline-block;
+            }
+
+            .links > ul li a {
+                text-decoration: none;
+                font-weight: lighter;
+                color: lightgrey;
+                font-size: 25px;
+                font-family: Spirax;
+            }
 
             /*------------------SECTION---------------*/
 
@@ -116,40 +135,61 @@
                 align-items: center;
             }
 
-            .szuflada_footer_content > iframe {
-                height: 270px;
-                width: 300px;
-            }
 
             .szuflada_contact {
                 margin-left: 100px;
             }
 
-            .szuflada_contact > ul li {
+            .szuflada_contact > table tr td {
                 list-style-type: none;
-                display: block;
-                font-size: 17px;
+                display: inline-block;
+                font-size: 25px;
                 font-weight: 600;
                 letter-spacing: 2px;
                 margin-right: 8px;
                 margin-top: 15px;
             }
 
-            .szuflada_contact > ul li a {
+            .szuflada_contact > table tr td a {
                 text-decoration: none;
                 color: lightgrey;
+            }
+
+            .szuflada_contact > table tr td img {
+                width: 40px;
+                height: 40px;
+            }
+
+            .opis_firmy {
+                color: lightgrey;
+                width: 50%;
+            }
+
+            .opis_firmy > p {
+                line-height: 20px;
+            }
+
+            .opis_firmy > p span {
+                font-size: 25px;
             }
         </style>
     </head>
     <body>
-        <header id="szuflada_header">
+        <div id="szuflada_header">
             <div class="szuflada_header_content szuflada_container">
+                <div class="links">
+                    <ul>
+                        <li><a href="#">Aukcje</a></li>
+                        <li><a href="#">Komentarze</a></li>
+                        <li><a href="#">Dostawa i płatność</a></li>
+                    </ul>
+                </div>
                 <div class="szuflada_7szuflad_header">
                     <h1>7 szuflad</h1>
                 </div>
             </div>
-        </header>
-        <section id="szuflada_section">
+        </div>
+        <div id="szuflada_section">
             <div class="szuflada_section_content szuflada_container">
                 <div class="szuflada_obraz">
                     <img src="https://www.moooi.com/sites/default/files/styles/large/public/product-images/square_0004s_0005_smoke_chair.jpg?itok=soe83mVk" alt="">
@@ -161,18 +201,30 @@
                     <p>Cena: 100 000,-</p>
                 </div>
             </div>
-        </section>
-        <footer id="szuflada_footer">
+        </div>
+        <div id="szuflada_footer">
             <div class="szuflada_footer_content szuflada_container">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2446.300716164578!2d21.301206866881536!3d52.18340638446293!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ed5a7fcf65c99%3A0xe5192aa4bc23d93d!2sStefan%C3%B3wka+20%2C+05-462+Stefan%C3%B3wka!5e0!3m2!1spl!2spl!4v1491825296040" frameborder="0" style="border:0" allowfullscreen></iframe>
+                <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2446.300716164578!2d21.301206866881536!3d52.18340638446293!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ed5a7fcf65c99%3A0xe5192aa4bc23d93d!2sStefan%C3%B3wka+20%2C+05-462+Stefan%C3%B3wka!5e0!3m2!1spl!2spl!4v1491825296040" frameborder="0" style="border:0" allowfullscreen></iframe> -->
+                <div class="opis_firmy">
+                    <p><span>O NAS</span> <br/>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                </div>
                 <div class="szuflada_contact">
-                    <ul>
-                        <li><a href="#"><p>www.7szuflad.pl</p></a></li>
-                        <li><a href="#"><p>facebook.com/7szuflad</p></a></li>
-                        <li><a href="#"><p>tel 696-996-999</p></a></li>
-                    </ul>
+                    <table>
+                        <tr>
+                            <td><img src="http://techencephalon.com/images/service_icon/web_icon.png" alt=""></td>
+                            <td><a href="#"><p>www.7szuflad.pl</p></a></td>
+                        </tr>
+                        <tr>
+                            <td><img src="http://www.iconsdb.com/icons/preview/white/facebook-3-xxl.png" alt=""></td>
+                            <td><a href="#"><p>facebook.com/7szuflad</p></a></td>
+                        </tr>
+                        <tr>
+                            <td><img src="http://mealthy.com.hk/images/icons/icon-phone.png" alt=""></td>
+                            <td><a href="#"><p>tel 505 999 322</p></a></td>
+                        </tr>
+                    </table>
                 </div>
             </div>
-        </footer>
+        </div>
     </body>
 </html>
